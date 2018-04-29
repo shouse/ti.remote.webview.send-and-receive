@@ -11,7 +11,8 @@
 
 var args = arguments[0] || {};
 
-$.webview.url = 'http://10.0.2.2:8080/demo.html';
+// $.webview.url = 'http://10.0.2.2:8080/demo.html';
+$.webview.url = 'http://www.your-web-server.com/';
 
 exports.sendDataToWebView = sendDataToWebView;
 
@@ -24,7 +25,8 @@ init();
  */
 function init() {
 	addEventListeners();
-
+	
+	// Let's set a demo to run in 5 seconds...
 	setTimeout(function () {
 		sendDataToWebView();
 	}, 5000);
@@ -59,6 +61,7 @@ function removeEventListeners() {
 /**
  * @function handleCommand
  * @param {string} _command Command to parse and execute
+ * @see http://x-callback-url.com/
  * @returns {void}
  */
 function handleCommand(_url) {
@@ -74,7 +77,7 @@ function handleCommand(_url) {
 
 /**
  * @function sendDataToWebView
- * @summary Send Data to WebView
+ * @summary Send Data to WebView.  This example is just for demonstration to automatically invoke the webpage to change URL to test
  * @param {object} _data Data to send to the webview
  * @returns {void}
  */
