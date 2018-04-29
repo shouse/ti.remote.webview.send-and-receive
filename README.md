@@ -28,6 +28,8 @@ Also while writing the limitations just now, I had an idea that this could invok
 #### URL Encoding
 This should be easy to solve but if you want to send JSON it will have to be sent in a url string, or possibly trigger Titanium to perform an `evalJS()` on the webpage to return it in a more customary manner.  I'm not quite sure the pros/cons of this approach. 
 
+I will update this repo when I have time to use `form-urlencoded` found [here](https://github.com/iambumblehead/form-urlencoded/blob/master/form-urlencoded.js)... or would *gladly accept a PR* for this functionality!
+
 ### Usage
 ##### Remote webview code
 
